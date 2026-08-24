@@ -45,14 +45,14 @@ Finally, I helped the Golioth DevRel team run [monthly Zephyr trainings](https:/
 
 # Open Source
 
-As part of an [exploration into the use of pre-commit for embedded development](https://cgnd.dev/posts/enforce-zephyr-code-quality-pre-commit/), I open sourced https://github.com/cgnd/zephyr-pre-commit-hooks which is a collection of [pre-commit](https://pre-commit.com/) hooks for use with Zephyr.
+As part of an [exploration into the use of pre-commit for embedded development](https://cgnd.dev/posts/enforce-zephyr-code-quality-pre-commit/), I open sourced https://github.com/common-ground-electronics/zephyr-pre-commit-hooks which is a collection of [pre-commit](https://pre-commit.com/) hooks for use with Zephyr.
 
 I also made my first small contributions to upstream Zephyr in the last few months:
 
 - [boards: shields: Add MikroElektronika Weather Click shield](https://github.com/zephyrproject-rtos/zephyr/pull/71076)
 - [boards: shields: Add nRF9160 DK overlay for arduino_uno_click shield](https://github.com/zephyrproject-rtos/zephyr/pull/71106)
 
-You can check out all of our open source projects on GitHub at https://github.com/cgnd/
+You can check out all of our open source projects on GitHub at https://github.com/common-ground-electronics/
 
 # Looking Forward
 

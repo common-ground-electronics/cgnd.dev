@@ -119,7 +119,7 @@ Next, we'll add a hook that runs Zephyr's `checkpatch.pl` (using the `.checkpatc
 
 ```yaml
 repos:
-  - repo: https://github.com/cgnd/zephyr-pre-commit-hooks
+  - repo: https://github.com/common-ground-electronics/zephyr-pre-commit-hooks
     rev: v1.0.0
     hooks:
     - id: zephyr-checkpatch-diff
@@ -287,9 +287,9 @@ Follow the recommended setup instructions at https://pre-commit.com/#pre-commit-
 
 ## Example Repo
 
-If you would like to check out an example Zephyr application with a `pre-commit` config, I've added a [pre-commit branch](https://github.com/cgnd/example-application/tree/pre-commit) to my fork of the Zephyr `example-application` repo. Here's a direct link to the `.pre-commit-config.yaml` file:
+If you would like to check out an example Zephyr application with a `pre-commit` config, I've added a [pre-commit branch](https://github.com/common-ground-electronics/example-application/tree/pre-commit) to my fork of the Zephyr `example-application` repo. Here's a direct link to the `.pre-commit-config.yaml` file:
 
-https://github.com/cgnd/example-application/blob/pre-commit/.pre-commit-config.yaml
+https://github.com/common-ground-electronics/example-application/blob/pre-commit/.pre-commit-config.yaml
 
 ## Revision History
 

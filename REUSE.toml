@@ -5,7 +5,7 @@
 version = 1
 SPDX-PackageName = "cgnd.dev"
 SPDX-PackageSupplier = "Common Ground Electronics <https://cgnd.dev>"
-SPDX-PackageDownloadLocation = "https://github.com/cgnd/cgnd.dev"
+SPDX-PackageDownloadLocation = "https://github.com/common-ground-electronics/cgnd.dev"
 
 [[annotations]]
 path = [
