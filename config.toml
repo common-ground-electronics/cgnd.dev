@@ -14,7 +14,7 @@ enableGitInfo = true
 [params]
 author = "Common Ground Electronics"
 license = ""
-licenseURL = "https://github.com/cgnd/cgnd.dev/blob/main/LICENSE.md"
+licenseURL = "https://github.com/common-ground-electronics/cgnd.dev/blob/main/LICENSE.md"
 description = "Common Ground Electronics"
 keywords = ""
 # info = ["Coming soon..."]
@@ -81,7 +81,7 @@ author = "authors"
 name = "Github"
 icon = "fa-brands fa-github fa-2x"
 weight = 1
-url = "https://github.com/cgnd"
+url = "https://github.com/common-ground-electronics"
 
 [[params.social]]
 name = "Bluesky"
@@ -143,7 +143,7 @@ weight = 5
 url = "contact/"
 
 [params.giscus]
-repo = "cgnd/cgnd.dev"
+repo = "common-ground-electronics/cgnd.dev"
 repoID = "R_kgDOIcblIw"
 category = "Blog Posts"
 categoryID = "DIC_kwDOIcblI84CX7an"
