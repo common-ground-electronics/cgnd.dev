@@ -73,7 +73,7 @@ That's it! We've got log messages from the target device showing up in the cloud
 
 ![](images/target_device_log_messages.png)
 
-You can check out the firmware on GitHub at https://github.com/cgnd/golioth-serial-logger
+You can check out the firmware on GitHub at https://github.com/common-ground-electronics/golioth-serial-logger
 
 ## Demo Time
 

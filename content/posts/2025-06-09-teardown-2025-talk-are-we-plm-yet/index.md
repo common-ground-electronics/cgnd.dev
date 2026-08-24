@@ -35,6 +35,6 @@ Make sure to check out the additional slides at the end of the deck for topics t
 
 ## Minimal KiCad+Aligni Example Project
 
-I put together a minimal example project demonstrating the KiCad database libraries integration. Check out the [README](https://github.com/cgnd/aligni-example-kicad-project/blob/main/README.md) for instructions on how to clone and try out this project on your own.
+I put together a minimal example project demonstrating the KiCad database libraries integration. Check out the [README](https://github.com/common-ground-electronics/aligni-example-kicad-project/blob/main/README.md) for instructions on how to clone and try out this project on your own.
 
-https://github.com/cgnd/aligni-example-kicad-project
+https://github.com/common-ground-electronics/aligni-example-kicad-project

@@ -35,7 +35,7 @@ I'm hopefully optimistic that there will eventually be a robust open-source USB/
 
 But, if you need a cross platform solution that works today, and you are OK paying for a commercial product, a good alternative is [VirtualHere](https://www.virtualhere.com/). VirtualHere is a mature USB-over-IP solution that supports Mac, Windows, and Linux. I put together a simple test repository with an example `Dockerfile` showing how to connect to USB devices from within a Docker container.
 
-Check it out here: https://github.com/cgnd/docker-virtualhere-client
+Check it out here: https://github.com/common-ground-electronics/docker-virtualhere-client
 
 In theory, this all seems pretty neat. However, after testing both of the USB-over-IP solutions above, I found that the current limitations/setup overhead are still too much of an annoyance for me to integrate them into my normal day-to-day development workflow.
 
