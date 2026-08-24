@@ -1,31 +1,18 @@
 <?xml version="1.0" ?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1024px" height="1024px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168">
   <style>
-    polygon {
-      stroke: black;
-      fill: black;
-    }
+    .t { fill: #FCFCFC; }
+    .c { fill: #21242A; }
 
     @media (prefers-color-scheme: dark) {
-      polygon {
-        stroke: white;
-        fill: white;
-      }
+      .t { fill: #21242A; }
+      .c { fill: #FCFCFC; }
     }
   </style>
-  <g transform="translate(512.0 512.0)">
-    <polygon stroke-width="0"
-      points="-96.0 -64.0 -96.0 -448.0 96.0 -448.0 96.0 -64.0 32.0 -64.0 32.0 -384.0 -32.0 -384.0 -32.0 -64.0"
-      stroke-linejoin="miter" />
-    <polygon stroke-width="0"
-      points="-448.0 128.0 -448.0 0.0 448.0 0.0 448.0 128.0 384.0 128.0 384.0 64.0 -384.0 64.0 -384.0 128.0"
-      stroke-linejoin="miter" />
-    <polygon stroke-width="0"
-      points="-320.0 256.0 -320.0 128.0 320.0 128.0 320.0 256.0 256.0 256.0 256.0 192.0 -256.0 192.0 -256.0 256.0"
-      stroke-linejoin="miter" />
-    <polygon stroke-width="0"
-      points="-192.0 384.0 -192.0 256.0 192.0 256.0 192.0 384.0 128.0 384.0 128.0 320.0 -128.0 320.0 -128.0 384.0"
-      stroke-linejoin="miter" />
-    <polygon stroke-width="0" points="-64.0 384.0 64.0 384.0 64.0 448.0 -64.0 448.0" stroke-linejoin="miter" />
+  <rect width="168" height="168" rx="36" class="t"/>
+  <g transform="translate(27 27) scale(0.95)">
+    <path d="M 99.84 37 A 46 46 0 1 0 99.84 83 L 80.29 83 A 30.67 30.67 0 1 1 80.29 37 Z" class="c"/>
+    <path d="M 60 52.33 L 105.36 52.33 A 46 46 0 0 1 105.36 67.67 L 60 67.67 Z" fill="#B87333"/>
+    <path d="M 75.33 60 A 15.33 15.33 0 1 0 44.67 60 A 15.33 15.33 0 1 0 75.33 60 Z" fill="#B87333"/>
   </g>
 </svg>
