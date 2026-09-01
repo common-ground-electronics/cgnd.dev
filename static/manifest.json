@@ -6,25 +6,25 @@
     {
       "purpose": "any",
       "sizes": "192x192",
-      "src": "/icon-192x192.png?v=6.0.0",
+      "src": "/icon-192x192.png?v=7.0.0",
       "type": "image/png"
     },
     {
       "purpose": "any",
       "sizes": "512x512",
-      "src": "/icon-512x512.png?v=6.0.0",
+      "src": "/icon-512x512.png?v=7.0.0",
       "type": "image/png"
     },
     {
       "purpose": "maskable",
       "sizes": "512x512",
-      "src": "/icon-maskable-512x512.png?v=6.0.0",
+      "src": "/icon-maskable-512x512.png?v=7.0.0",
       "type": "image/png"
     }
   ],
   "id": "/",
-  "name": "CGND",
-  "short_name": "CGND",
+  "name": "Common Ground Electronics",
+  "short_name": "CGE",
   "start_url": "/",
   "theme_color": "#FCFCFC"
 }

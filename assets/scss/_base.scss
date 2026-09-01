@@ -1,3 +1,61 @@
+// Brand fonts — Archivo (400 body / 500 UI / 700 strong / 800 headings) and
+// Monaspace Neon (code), vendored from brand/assets/fonts/ as woff2.
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Archivo-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Archivo-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Archivo-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Archivo-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Monaspace Neon";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/MonaspaceNeon-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Monaspace Neon";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/MonaspaceNeon-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Monaspace Neon";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/MonaspaceNeon-Bold.woff2") format("woff2");
+}
+
 *,
 *:after,
 *:before {
@@ -54,7 +112,8 @@ h4,
 h5,
 h6 {
   font-family: $font-family;
-  font-weight: 600;
+  font-weight: 800; // Archivo 800 headings, tracked -1.5% — the wordmark voice
+  letter-spacing: -0.015em;
   color: $alt-fg-color;
   margin: 4rem 0 2.5rem 0;
 
@@ -177,8 +236,8 @@ code {
   font-weight: 400;
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem;
-  background-color: $darker-alt-bg-color;
-  color: $fg-color;
+  background-color: $mist;
+  color: $code-fg-color;
 
   @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
@@ -186,7 +245,7 @@ code {
 }
 
 blockquote {
-  border-left: 2px solid $alt-bg-color;
+  border-left: 2px solid $fog;
   padding-left: 2rem;
   line-height: 2.2rem;
   font-weight: 400;
@@ -301,4 +360,17 @@ figure {
 
 .fas {
   font-weight: 900;
+}
+
+// Brand type in the header: nav links at UI weight 500, the site title as the
+// wordmark voice — Archivo 800, tracked -1.5%. (nav.navigation outranks the
+// theme's .navigation selectors, which are imported after this file.)
+nav.navigation a,
+nav.navigation span {
+  font-weight: 500;
+}
+
+nav.navigation .navigation-title {
+  font-weight: 800;
+  letter-spacing: -0.015em;
 }

@@ -3,11 +3,15 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 //
 // Overrides the hugo-coder theme's _variables.scss with the Common Ground
-// Electronics brand palette: Copper #B87333 (deep #96591F, bright #CE8B47),
-// Ink #21242A, Fog #E8E8EA, Paper #FCFCFC, Verdigris #3E8E7E.
+// Electronics brand palette and type: Copper #B87333 (deep #96591F, bright
+// #CE8B47), Ink #21242A, Fog #DFDFE2 (dividers), Mist #F2F2F4 (raised
+// surfaces), Paper #FCFCFC, Verdigris #3E8E7E, Rust #A03B2E (errors only);
+// Archivo (800 headings / 400 body / 500 UI) + Monaspace Neon for code.
+// Values track brand/CLAUDE.md and brand/zensical/docs/stylesheets/extra-paper.css.
 
-// Fonts
-$font-family: -apple-system,
+// Fonts — vendored in static/fonts/ (see @font-face in _base.scss)
+$font-family: "Archivo",
+-apple-system,
 BlinkMacSystemFont,
 "Segoe UI",
 Roboto,
@@ -23,43 +27,49 @@ STXihei,"华文细黑",
 SimSun,"宋体",
 Heiti,"黑体",
 sans-serif;
-$code-font-family: SFMono-Regular,
-Consolas,
-Liberation Mono,
+$code-font-family: "Monaspace Neon",
+ui-monospace,
+"SF Mono",
+"Cascadia Mono",
 Menlo,
+Consolas,
 monospace;
 
 // Brand colors
 $copper: #B87333;
 $copper-deep: #96591F; // links on light — AA on paper
-$copper-bright: #CE8B47; // links on dark
+$copper-bright: #CE8B47; // links / primary on dark
 $ink: #21242A;
-$fog: #E8E8EA;
+$fog: #DFDFE2; // dividers / hairlines
+$mist: #F2F2F4; // raised surfaces (tags, code)
 $paper: #FCFCFC;
+$verdigris: #3E8E7E; // accent — never in the logo
+$rust: #A03B2E; // errors / don'ts only
 
 // Colors
 $bg-color: $paper !default;
 $fg-color: $ink !default;
-$alt-bg-color: $fog !default;
+$alt-bg-color: $mist !default;
 $alt-fg-color: $ink !default;
-$darker-alt-bg-color: #DFDFE2 !default;
+$darker-alt-bg-color: $fog !default;
 $link-color: $copper-deep !default;
+$code-fg-color: #33373F !default; // ink text ramp, step 1
 
-// Dark colors
+// Dark colors (colorScheme is "light", kept on-brand for completeness)
 $bg-color-dark: #1B1E24 !default;
 $fg-color-dark: #E9EAEC !default;
-$alt-bg-color-dark: #262A32 !default;
+$alt-bg-color-dark: #3A3E46 !default; // raised surface on dark
 $alt-fg-color-dark: #E9EAEC !default;
-$lighter-alt-bg-color-dark: #33373F !default;
+$lighter-alt-bg-color-dark: #4A4F58 !default; // hover / pressed on dark
 $link-color-dark: $copper-bright !default;
 
 // Notice colors
 $fg-color-notice-note-icon: #5e35b1 !default;
 $bg-color-notice-note-title: #673ab71a !default;
 $bg-color-notice-note-content: #7e57c21a !default;
-$fg-color-notice-tip-icon: #00897b !default;
-$bg-color-notice-tip-title: #0096881a !default;
-$bg-color-notice-tip-content: #26a69a1a !default;
+$fg-color-notice-tip-icon: $verdigris !default;
+$bg-color-notice-tip-title: #3e8e7e1a !default;
+$bg-color-notice-tip-content: #3e8e7e14 !default;
 $fg-color-notice-example-icon: #6d4c41 !default;
 $bg-color-notice-example-title: #7955481a !default;
 $bg-color-notice-example-content: #8d6e631a !default;
@@ -72,9 +82,9 @@ $bg-color-notice-info-content: #42a5f51a !default;
 $fg-color-notice-warning-icon: #ffb300 !default;
 $bg-color-notice-warning-title: #ffc1071a !default;
 $bg-color-notice-warning-content: #ffca281a !default;
-$fg-color-notice-error-icon: #e53935 !default;
-$bg-color-notice-error-title: #f443361a !default;
-$bg-color-notice-error-content: #ef53501a !default;
+$fg-color-notice-error-icon: $rust !default;
+$bg-color-notice-error-title: #a03b2e1a !default;
+$bg-color-notice-error-content: #a03b2e14 !default;
 
 // Path to FontAwesome TTF/WOFF files.
 $fa-font-path: "../fonts" !default;

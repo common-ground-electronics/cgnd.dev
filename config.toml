@@ -42,8 +42,8 @@ customCSS = []
 customSCSS = []
 # Custom JS
 customJS = []
-favicon_32 = "/favicon-32x32.png?v=6.0.0"
-faviconSVG = "/favicon.svg?v=6.0.0"
+favicon_32 = "/favicon-32x32.png?v=7.0.0"
+faviconSVG = "/favicon.svg?v=7.0.0"
 # Default Open Graph / Twitter card image
 images = ["images/og.png"]
 
