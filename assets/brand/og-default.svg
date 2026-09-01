@@ -1,14 +1,7 @@
 <!-- Default Open Graph card for cgnd.dev, derived from the brand template
      brand/assets/social/og-light.svg (title text replaced per the template's
-     two-line rule). Regenerate static/images/og.png after editing:
-
-       uv run --with resvg-py==0.5.0 python -c "
-       import resvg_py, pathlib
-       svg = pathlib.Path('assets/brand/og-default.svg').read_text()
-       png = resvg_py.svg_to_bytes(svg_string=svg, width=1200, height=630,
-                                   font_dirs=['brand/assets/fonts'], skip_system_fonts=True)
-       pathlib.Path('static/images/og.png').write_bytes(bytes(png))"
--->
+     two-line rule). To regenerate static/images/og.png after editing, see
+     assets/brand/README.md in this repo. -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Archivo">
   <rect width="1200" height="630" fill="#FCFCFC"></rect>
   <g transform="translate(1200 76) scale(-0.93333 0.94)" stroke="#E3D5C6" fill="none" stroke-width="10">
