@@ -13,6 +13,6 @@
   <text x="224.45" y="142.21" font-size="20.8" font-weight="500" fill="#21242A" textLength="228.99" lengthAdjust="spacing">ELECTRONICS</text>
   <text x="88" y="407" font-size="72" font-weight="800" letter-spacing="-1" fill="#21242A">Embedded systems</text>
   <text x="88" y="488" font-size="72" font-weight="800" letter-spacing="-1" fill="#21242A">engineering services</text>
-  <text x="88" y="550" font-family="Monaspace Neon" font-size="26" fill="#96591F">cge.dev</text>
+  <text x="88" y="550" font-family="Monaspace Neon" font-size="26" fill="#96591F">cgnd.dev</text>
   <rect y="618" width="1200" height="12" fill="#B87333"></rect>
 </svg>
