@@ -1,35 +1,36 @@
-// Brand fonts — Archivo (400 body / 500 UI / 700 strong / 800 headings) and
-// Monaspace Neon (code), vendored from brand/assets/fonts/ as woff2.
+// Brand fonts — Inter (400 body / 500 UI / 700 strong / 800 headings) and
+// Monaspace Neon (code). Inter woff2 files come from the rsms/inter 4.1
+// release; Monaspace Neon is converted from brand/assets/fonts/.
 @font-face {
-  font-family: "Archivo";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Archivo-Regular.woff2") format("woff2");
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Archivo";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/Archivo-Medium.woff2") format("woff2");
+  src: url("../fonts/Inter-Medium.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Archivo";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/Archivo-Bold.woff2") format("woff2");
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Archivo";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("../fonts/Archivo-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2");
 }
 
 @font-face {
@@ -112,7 +113,7 @@ h4,
 h5,
 h6 {
   font-family: $font-family;
-  font-weight: 800; // Archivo 800 headings, tracked -1.5% — the wordmark voice
+  font-weight: 800; // Inter 800 headings, tracked -1.5% — the wordmark voice
   letter-spacing: -0.015em;
   color: $alt-fg-color;
   margin: 4rem 0 2.5rem 0;
@@ -363,7 +364,7 @@ figure {
 }
 
 // Brand type in the header: nav links at UI weight 500, the site title as the
-// wordmark voice — Archivo 800, tracked -1.5%. (nav.navigation outranks the
+// wordmark voice — Inter 800, tracked -1.5%. (nav.navigation outranks the
 // theme's .navigation selectors, which are imported after this file.)
 nav.navigation a,
 nav.navigation span {
