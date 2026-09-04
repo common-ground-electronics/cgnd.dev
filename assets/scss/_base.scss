@@ -329,6 +329,14 @@ figure {
 
   min-height: 100vh;
   width: 100%;
+
+  // On mobile browsers 100vh is the viewport with the toolbars hidden, so the
+  // page is taller than the visible area at load and the footer sits below the
+  // fold. dvh tracks the visible area. The @supports block keeps Hugo's CSS
+  // minifier from dropping the dvh declaration.
+  @supports (min-height: 100dvh) {
+    min-height: 100dvh;
+  }
 }
 
 .container {
