@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+  a {
+    color: $link-color;
+  }
+
+  .social {
+    ul {
+      list-style: none;
+      margin: 0 0 1rem 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        position: relative;
+
+        a {
+          color: $fg-color;
+          text-transform: uppercase;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          font-size: 1.6rem;
+
+          &:hover,
+          &:focus {
+            color: $link-color;
+          }
+
+          @media only screen and (max-width: 768px) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
