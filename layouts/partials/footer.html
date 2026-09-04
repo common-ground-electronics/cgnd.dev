@@ -1,5 +1,8 @@
 <footer class="footer">
   <section class="container">
+    <div class="social">
+      {{ partialCached "home/social.html" . }}
+    </div>
     ©
     {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
       {{ .Site.Params.since }} -
