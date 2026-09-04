@@ -39,7 +39,7 @@ maxSeeAlsoItems = 5
 # Custom CSS
 customCSS = []
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
-customSCSS = []
+customSCSS = ["scss/breadcrumbs.scss"]
 # Custom JS
 customJS = []
 favicon_32 = "/favicon-32x32.png?v=7.0.0"
