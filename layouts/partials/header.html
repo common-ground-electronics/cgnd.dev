@@ -37,5 +37,18 @@
         {{ end }}
       </ul>
     {{ end }}
+    {{/* Breadcrumb as a terminal prompt: "~/<path> ❯ _" for the current page.
+         "~" links home and each path segment links to its section; the last
+         segment is the current page. The trailing slash is dropped so the home
+         page reads as a bare "~". */}}
+    {{ $isDir := strings.HasSuffix .RelPermalink "/" }}
+    {{ $segments := split (strings.Trim .RelPermalink "/") "/" }}
+    {{ $last := sub (len $segments) 1 }}
+    {{ $acc := "" }}
+    <nav class="prompt" aria-label="Breadcrumb">
+      <span class="prompt-path"><a href="{{ relLangURL "" }}">~</a>{{ range $i, $seg := $segments }}{{ if $seg }}{{ $acc = printf "%s/%s" $acc $seg }}/<a href="{{ $acc }}{{ if or $isDir (ne $i $last) }}/{{ end }}"{{ if eq $i $last }} aria-current="page"{{ end }}>{{ $seg }}</a>{{ end }}{{ end }}</span>
+      <span class="prompt-chevron" aria-hidden="true">&#x276F;</span>
+      <span class="prompt-cursor" aria-hidden="true">_</span>
+    </nav>
   </section>
 </nav>
