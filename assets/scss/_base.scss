@@ -371,12 +371,16 @@ figure {
   font-weight: 900;
 }
 
-// Brand type in the header: nav links at UI weight 500, the site title as the
-// wordmark voice — Inter 800, tracked -1.5%. (nav.navigation outranks the
+// Brand type in the header: nav links at heading weight 800, the site title as
+// the wordmark voice — Inter 800, tracked -1.5%. (nav.navigation outranks the
 // theme's .navigation selectors, which are imported after this file.)
 nav.navigation a,
 nav.navigation span {
   font-weight: 500;
+}
+
+nav.navigation .navigation-link {
+  font-weight: 800;
 }
 
 nav.navigation .navigation-title {
