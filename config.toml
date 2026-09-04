@@ -94,14 +94,14 @@ rel = "me"
 name = "Mastodon"
 icon = "fa-brands fa-mastodon fa-2x"
 weight = 3
-url = "https://mastodon.social/@cgnd"
+url = "https://mastodon.social/@common_ground_electronics"
 rel = "me"
 
 [[params.social]]
 name = "X (Twitter)"
 icon = "fa-brands fa-x-twitter fa-2x"
 weight = 4
-url = "https://x.com/cgndelectronics"
+url = "https://x.com/c_g_electronics"
 
 [[params.social]]
 name = "LinkedIn"
