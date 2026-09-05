@@ -4,18 +4,18 @@
 //
 // Header breadcrumb rendered as a shell path on a second line under the site
 // title and nav links: "~/<path>/" in Monaspace Neon, where <path> is the
-// current page's URL path. "~" and each path segment are links: prompt-colored
+// current page's URL path. "~" and each path segment are links: code-colored
 // at rest, and on hover the site's link treatment (copper, underlined, faded
 // in) like the nav links beside them. Loaded via customSCSS in config.toml.
 
 @import "variables";
 
 nav.navigation {
-  // The theme fixes the nav at 6rem; let the prompt line add to it.
+  // The theme fixes the nav at 6rem; let the breadcrumb line add to it.
   height: auto;
   min-height: 6rem;
 
-  .prompt {
+  .breadcrumb {
     clear: both;
     display: flex;
     padding: 0.4rem 0 0.6rem;
@@ -42,7 +42,7 @@ nav.navigation {
   }
 
   // Long slugs truncate rather than wrap or push the path off the line.
-  .prompt .prompt-path {
+  .breadcrumb .breadcrumb-path {
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
