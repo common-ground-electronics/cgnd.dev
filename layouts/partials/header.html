@@ -45,8 +45,8 @@
     {{ $segments := split (strings.Trim .RelPermalink "/") "/" }}
     {{ $last := sub (len $segments) 1 }}
     {{ $acc := "" }}
-    <nav class="prompt" aria-label="Breadcrumb">
-      <span class="prompt-path"><a href="{{ relLangURL "" }}">~</a>{{ range $i, $seg := $segments }}{{ if $seg }}{{ $acc = printf "%s/%s" $acc $seg }}/<a href="{{ $acc }}{{ if or $isDir (ne $i $last) }}/{{ end }}"{{ if eq $i $last }} aria-current="page"{{ end }}>{{ $seg }}</a>{{ end }}{{ end }}{{ if $isDir }}/{{ end }}</span>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <span class="breadcrumb-path"><a href="{{ relLangURL "" }}">~</a>{{ range $i, $seg := $segments }}{{ if $seg }}{{ $acc = printf "%s/%s" $acc $seg }}/<a href="{{ $acc }}{{ if or $isDir (ne $i $last) }}/{{ end }}"{{ if eq $i $last }} aria-current="page"{{ end }}>{{ $seg }}</a>{{ end }}{{ end }}{{ if $isDir }}/{{ end }}</span>
     </nav>
   </section>
 </nav>
