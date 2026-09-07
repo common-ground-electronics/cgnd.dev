@@ -1,6 +1,7 @@
 // Brand fonts — Inter (400 body / 500 UI / 700 strong / 800 headings) and
-// Monaspace Neon (code). Inter woff2 files come from the rsms/inter 4.1
-// release; Monaspace Neon is converted from brand/assets/fonts/.
+// Monaspace Neon (code, and the header title at 800). Inter woff2 files come
+// from the rsms/inter 4.1 release; Monaspace Neon is converted from the
+// githubnext/monaspace 1.400 static OTFs (brand/assets/fonts/ plus ExtraBold).
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -55,6 +56,14 @@
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/MonaspaceNeon-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Monaspace Neon";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/MonaspaceNeon-ExtraBold.woff2") format("woff2");
 }
 
 *,
@@ -383,9 +392,9 @@ figure {
   font-weight: 900;
 }
 
-// Brand type in the header: nav links at heading weight 800, the site title as
-// the wordmark voice — Inter 800 at 0% tracking. (nav.navigation outranks the
-// theme's .navigation selectors, which are imported after this file.)
+// Brand type in the header: nav links at heading weight 800, the site title in
+// Monaspace Neon 800 at 0% tracking. (nav.navigation outranks the theme's
+// .navigation selectors, which are imported after this file.)
 nav.navigation a,
 nav.navigation span {
   font-weight: 500;
@@ -397,6 +406,7 @@ nav.navigation .navigation-link {
 }
 
 nav.navigation .navigation-title {
+  font-family: $code-font-family;
   font-weight: 800;
   letter-spacing: 0;
 }
