@@ -94,7 +94,14 @@ a {
 
   &:focus,
   &:hover {
+    // Underline bar a quarter cap height thick, cleared below the descenders
+    // so it runs unbroken under p, g, y, etc. The offset is the descender
+    // depth (0.3 cap in Inter and Monaspace Neon) plus a quarter-cap gap,
+    // so it scales with the type instead of the font's underline metrics.
     text-decoration: underline;
+    text-decoration-thickness: 0.25cap;
+    text-underline-offset: 0.55cap;
+    text-decoration-skip-ink: none;
   }
 }
 
