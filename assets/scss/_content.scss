@@ -83,6 +83,12 @@
       }
 
       .tags {
+        // The hover underline on the authors/categories links above
+        // extends past their line box, and the tag chips' background
+        // painted flush below it. A quarter-cap gap, matching the
+        // underline's own spacing, keeps the bar clear of the chips.
+        margin-top: 0.25cap;
+
         .tag {
           display: inline-block;
           padding: 0.3rem 0.6rem;
