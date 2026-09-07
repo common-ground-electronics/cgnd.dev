@@ -4,9 +4,10 @@
 //
 // Header breadcrumb rendered as a shell path on a second line under the site
 // title and nav links: "~/<path>/" in Monaspace Neon, where <path> is the
-// current page's URL path. "~" and each path segment are links: code-colored
-// at rest, and on hover the site's link treatment (copper, underlined, faded
-// in) like the nav links beside them. Loaded via customSCSS in config.toml.
+// current page's URL path. "~" and each path segment are links, code-colored
+// at rest and on hover; like the nav links beside them, the copper underline
+// from the base link rule is the only hover cue (see header.scss). Loaded via
+// customSCSS in config.toml.
 
 @import "variables";
 
@@ -32,13 +33,6 @@ nav.navigation {
       font-weight: 400;
       color: inherit;
     }
-
-    // Restated here because the rule above outranks the theme's nav hover.
-    // The underline and fade come from the base link rule.
-    a:hover,
-    a:focus {
-      color: $link-color;
-    }
   }
 
   // Long slugs truncate rather than wrap or push the path off the line.
@@ -47,5 +41,11 @@ nav.navigation {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    // overflow: hidden clips at the padding box, and the hover underline
+    // sits below the line box. Extend the clip box down to hold the bar and
+    // pull the margin back the same amount so the layout doesn't move.
+    padding-bottom: 0.5cap;
+    margin-bottom: -0.5cap;
   }
 }

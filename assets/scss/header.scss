@@ -1,0 +1,23 @@
+// SPDX-FileCopyrightText: Common Ground Electronics <https://cgnd.dev>
+//
+// SPDX-License-Identifier: MIT OR Apache-2.0
+//
+// Header link hover: the text keeps its resting color, and the only change
+// is the copper underline bar from the base link rule appearing under it.
+// The theme colors nav links copper on hover; this outranks that rule.
+// Loaded via customSCSS in config.toml.
+
+@import "variables";
+
+nav.navigation {
+  a {
+    // Set on the longhand at rest, since the base hover rule's
+    // text-decoration shorthand would otherwise reset it to the text color.
+    text-decoration-color: $link-color;
+
+    &:hover,
+    &:focus {
+      color: $fg-color;
+    }
+  }
+}
