@@ -90,6 +90,9 @@ a {
   font-weight: 500;
   color: $link-color;
   text-decoration: none;
+  // Raw copper for the hover bar, set at rest too so it doesn't animate in
+  // from the text color.
+  text-decoration-color: $accent-color;
   transition: all 0.25s ease-in;
 
   &:focus,
@@ -102,6 +105,8 @@ a {
     text-decoration-thickness: 0.25cap;
     text-underline-offset: 0.55cap;
     text-decoration-skip-ink: none;
+    // The shorthand above resets the color to currentColor; restore it.
+    text-decoration-color: $accent-color;
   }
 }
 

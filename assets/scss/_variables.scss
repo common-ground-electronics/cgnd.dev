@@ -37,7 +37,7 @@ monospace;
 
 // Brand colors
 $copper: #B87333;
-$copper-deep: #96591F; // links on light — AA on paper
+$copper-deep: #96591F; // link text on light — AA on paper
 $copper-bright: #CE8B47; // links / primary on dark
 $ink: #21242A;
 $fog: #DFDFE2; // dividers / hairlines
@@ -53,6 +53,7 @@ $alt-bg-color: $mist !default;
 $alt-fg-color: $ink !default;
 $darker-alt-bg-color: $fog !default;
 $link-color: $copper-deep !default;
+$accent-color: $copper !default; // hover underline bar, social icon hover
 $code-fg-color: #33373F !default; // ink text ramp, step 1
 
 // Dark colors (colorScheme is "light", kept on-brand for completeness)
