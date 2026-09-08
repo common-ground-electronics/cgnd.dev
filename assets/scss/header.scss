@@ -22,9 +22,10 @@
 // Inter ExtraBold metrics (UPM 2048): ascender 1984, descender 494, cap
 // height 1490. In a 1em line box the caps start 0.1362em below the top.
 //
-// Dark scheme: the ink-colored text flips to the dark foreground, following
-// the theme's body.colorscheme-dark / colorscheme-auto pattern. ELECTRONICS
-// stays raw copper, as the mark does in the brand's dark lockup.
+// Dark scheme: COMMON and GROUND flip to paper and ELECTRONICS stays raw
+// copper, matching the brand's dark lockup; nav links take the dark
+// foreground. Follows the theme's body.colorscheme-dark / colorscheme-auto
+// pattern.
 //
 // Loaded via customSCSS in config.toml.
 
@@ -111,7 +112,7 @@ nav.navigation {
     }
 
     .navigation-title .wordmark-line {
-      color: $fg-color-dark;
+      color: $paper;
     }
 
     .navigation-title .wordmark-line-sub {

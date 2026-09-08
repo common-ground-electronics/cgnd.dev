@@ -1,0 +1,14 @@
+{{/* Overrides the theme partial: the dark stylesheet must also load when the
+     color scheme toggle is visible, since the toggle only flips the body class
+     and relies on these rules already being present. */}}
+{{ if or (eq .Site.Params.colorScheme "auto") (eq .Site.Params.colorScheme "dark") (not .Site.Params.hideColorSchemeToggle) }}
+  {{ if hugo.IsServer }}
+    {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
+    {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+  {{ else }}
+    {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
+    {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+  {{ end }}
+{{ end }}
