@@ -131,6 +131,32 @@
   }
 }
 
+// The home logo ships as a light and a dark mark (ink ring vs paper ring);
+// show the one that matches the color scheme.
+.avatar .avatar-dark {
+  display: none;
+}
+
+@mixin avatar_dark {
+  .avatar .avatar-light {
+    display: none;
+  }
+
+  .avatar .avatar-dark {
+    display: unset;
+  }
+}
+
+body.colorscheme-dark {
+  @include avatar_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include avatar_dark();
+  }
+}
+
 .list {
   ul {
     margin: 3.2rem 0 3.2rem 0;

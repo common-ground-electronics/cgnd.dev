@@ -19,6 +19,7 @@ description = "Common Ground Electronics"
 keywords = ""
 # info = ["Coming soon..."]
 avatarURL = "images/logo.svg"
+avatarURLDark = "images/logo-dark.svg"
 # gravatar = "gravatar@cgnd.dev"
 dateFormat = "January 2, 2006"
 since = 2022

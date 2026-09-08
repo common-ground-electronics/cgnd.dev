@@ -1,6 +1,13 @@
 {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
   {{ with .Site.Params.avatarURL }}
-    <div class="avatar"><img class="center" src="{{ . | relURL }}" alt="avatar"></div>
+    <div class="avatar">
+      <img class="center avatar-light" src="{{ . | relURL }}" alt="avatar">
+      {{/* Dark-scheme counterpart, swapped in by CSS under body.colorscheme-dark
+           and colorscheme-auto so it follows the site's scheme setting. */}}
+      {{ with $.Site.Params.avatarURLDark }}
+        <img class="center avatar-dark" src="{{ . | relURL }}" alt="avatar">
+      {{ end }}
+    </div>
   {{ end }}
 {{ end }}
 {{ with .Site.Params.gravatar }}
