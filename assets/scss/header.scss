@@ -37,6 +37,11 @@ nav.navigation {
   height: auto;
 
   .container {
+    // Trimming the line boxes removed the leading that used to sit above the
+    // single-line title. Put it back so the wordmark's cap top stays 2rem
+    // from the top of the page, where the old title's cap top was.
+    padding-top: 1rem;
+
     @media only screen and (min-width: 769px) {
       display: flex;
       align-items: flex-start;
