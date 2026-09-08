@@ -1,8 +1,12 @@
 <nav class="navigation">
   <section class="container">
     {{ with .Site }}
+    {{/* The last word of the site title ("Electronics") is set in raw copper;
+         the rest stays the resting text color. */}}
+    {{ $words := split .Params.author " " }}
+    {{ $last := sub (len $words) 1 }}
     <a class="navigation-title" href="{{ absLangURL "" }}">
-      {{ .Params.author }}
+      {{ delimit (first $last $words) " " }} <span class="navigation-title-accent">{{ index $words $last }}</span>
     </a>
     {{ end }}
     {{ if or .Site.Menus.main hugo.IsMultilingual }}

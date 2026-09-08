@@ -409,4 +409,21 @@ nav.navigation .navigation-title {
   font-family: $code-font-family;
   font-weight: 800;
   letter-spacing: 0;
+
+  // The site title is a wordmark, not a link in running text: no copper
+  // underline bar on hover or focus.
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// "Electronics" in raw copper, the same color as the hover bar and the footer
+// social icon hover. Set on the span so it holds through the link's hover.
+// The inherits keep the title's Monaspace Neon 800 over the theme's
+// .navigation span rule, which would otherwise reset the span to Inter 500.
+nav.navigation .navigation-title-accent {
+  color: $accent-color;
+  font-family: inherit;
+  font-weight: inherit;
 }
