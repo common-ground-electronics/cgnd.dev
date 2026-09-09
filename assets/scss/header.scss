@@ -7,17 +7,18 @@
 // The theme colors nav links copper on hover; this outranks that rule.
 //
 // Site title: a three-line wordmark (COMMON / GROUND / ELECTRONICS) in
-// Monaspace Neon at weight 800 (the heaviest face shipped is Bold 700, which
-// the browser selects for it). COMMON and GROUND at 36px, ELECTRONICS at 18px
-// in raw copper so its cap height is half theirs. Each line is trimmed to its
-// cap height, the gap between lines is a quarter of the 36px cap height, and
-// ELECTRONICS is tracked out to the same width as the lines above. It links
-// home but reads as a wordmark, so it shows none of the link hover cues.
+// Monaspace Neon ExtraBold, the true 800 face vendored in static/fonts/ so
+// the browser never has to synthesize it. COMMON and GROUND at 36px,
+// ELECTRONICS at 18px in raw copper so its cap height is half theirs. Each
+// line is trimmed to its cap height, the gap between lines is a quarter of
+// the 36px cap height, and ELECTRONICS is tracked out to the same width as
+// the lines above. It links home but reads as a wordmark, so it shows none
+// of the link hover cues.
 //
-// Monaspace Neon Bold metrics (UPM 2000): ascender 1890, descender 400,
-// cap height 1460. In a 1em line box the caps start 0.1425em below the top
-// ((1 + 0.945 - 0.2) / 2 - 0.73) and the baseline sits 0.1275em above the
-// bottom ((1 - 0.945 + 0.2) / 2).
+// Monaspace Neon ExtraBold metrics (UPM 2000, identical across the Neon
+// weights): ascender 1890, descender 400, cap height 1460. In a 1em line box
+// the caps start 0.1425em below the top ((1 + 0.945 - 0.2) / 2 - 0.73) and
+// the baseline sits 0.1275em above the bottom ((1 - 0.945 + 0.2) / 2).
 //
 // Inter ExtraBold metrics (UPM 2048): ascender 1984, descender 494, cap
 // height 1490. In a 1em line box the caps start 0.1362em below the top.
