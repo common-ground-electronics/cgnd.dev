@@ -47,7 +47,7 @@ The reality is that managing git hooks manually is painful and it's hard to enfo
 
 How do you make sure that everyone on your team is running the same set of pre-commit checks?
 
-## A case for using `pre-commit` in Zephyr projects
+## A case for using pre-commit in Zephyr projects
 
 Fortunately, there is a fantastic tool called [`pre-commit`](https://pre-commit.com/) that can automatically install, manage, and run `git commit` hooks, without requiring individual developers to manage these hooks manually. By shipping a single `.pre-commit-config.yaml` config with your embedded project, you can make it trivially easy for individual developers to run code quality checks and automatically enforce code style rules in their development environment. *And this all happens before the code is checked into git*. This can help ensure that code submitted for peer review is consistently formatted and matches the agreed-upon code style for the project, allowing discussions to focus on the actual content of the changes without devolving into code style arguments.
 
@@ -99,7 +99,7 @@ No additional types will be considered - file '../foo/bar/typedefsfile': No such
 
 Check these config files into the root of your project's git repository.
 
-## How to configure `pre-commit` in a Zephyr project
+## How to configure pre-commit in a Zephyr project
 
 Now that we've got the `.checkpatch.conf` config file in our project repo, we can create a `pre-commit` config to run these checks. For the remainder of this article, I'm going to assume your project follows the recommended layout in the Zephyr [example-application](https://github.com/zephyrproject-rtos/example-application), but it should be simple to adapt this to your project layout.
 
@@ -213,7 +213,7 @@ Run Zephyr's checkpatch.pl...............................................Passed
 
 ## Tips & Tricks
 
-#### What to do when `clang-format` and `checkpatch.pl` disagree
+#### What to do when clang-format and checkpatch.pl disagree
 
 You may run into cases where Zephyr's `.clang-format` and `.checkpatch.conf` disagree on code style (in the Zephyr project, `clang-format` is [not intended to be a one-stop solution to all the code style issues](https://github.com/zephyrproject-rtos/zephyr/issues/52712#issuecomment-1516541794)).
 
@@ -263,7 +263,7 @@ static const struct divider_config divider_config = {
 
 Now, if you try to commit this, `checkpatch.pl` checks will pass.
 
-#### How to skip running `pre-commit` hooks if necessary
+#### How to skip running pre-commit hooks if necessary
 
 There may be times when `pre-commit` is failing but you need to commit anyway.
 
@@ -279,7 +279,7 @@ To skip one or more hooks, you can set the `SKIP` environment variable to a comm
 SKIP=zephyr-checkpatch-diff git commit -m "foo"
 ```
 
-#### Automatically install `pre-commit` hooks when a repo is cloned
+#### Automatically install pre-commit hooks when a repo is cloned
 
 You can configure `git init` to automatically install `pre-commit` hooks when a new repository is cloned (rather than having to run `pre-commit install` manually).
 
