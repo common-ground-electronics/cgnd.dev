@@ -1,6 +1,7 @@
 // Brand fonts — Inter (400 body / 500 UI / 700 strong / 800 headings) and
-// Monaspace Neon (code). Inter woff2 files come from the rsms/inter 4.1
-// release; Monaspace Neon is converted from brand/assets/fonts/.
+// Monaspace Neon (400/500/700 code, 800 wordmark). Inter woff2 files come
+// from the rsms/inter 4.1 release; Monaspace Neon is converted from the
+// 1.400 release OTFs (brand/assets/fonts/) with fonttools.
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -55,6 +56,14 @@
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/MonaspaceNeon-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Monaspace Neon";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/MonaspaceNeon-ExtraBold.woff2") format("woff2");
 }
 
 *,
